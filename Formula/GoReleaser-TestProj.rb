@@ -5,29 +5,29 @@
 class GoReleaserTestProj < Formula
   desc "Software to create fast and easy drum rolls."
   homepage "https://support.cimpress.cloud/hc/en-us/articles/227873908"
-  version "0.1.10"
+  version "0.1.11"
   license "MIT"
   bottle :unneeded
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://gitlab.com/28251648/-/releases/v0.1.10/downloads/GoReleaser-TestProj_0.1.10_Darwin_x86_64.tar.gz"
-      sha256 "b8973c9717e8a8fa94bc098a25dd386045baf630a5e8717c379b8e11ec38fa5d"
+      url "https://gitlab.com/28251648/-/releases/v0.1.11/downloads/GoReleaser-TestProj_0.1.11_Darwin_x86_64.tar.gz"
+      sha256 "365336a9b2bce9863a4ceadb369ec613380c708ea254f59b6b889aae4b2c2364"
     end
     if Hardware::CPU.arm?
-      url "https://gitlab.com/28251648/-/releases/v0.1.10/downloads/GoReleaser-TestProj_0.1.10_Darwin_arm64.tar.gz"
-      sha256 "0e889a51cb846dc00dd4798e15bef28675658caea86ab5c3d7b6f692e770f07e"
+      url "https://gitlab.com/28251648/-/releases/v0.1.11/downloads/GoReleaser-TestProj_0.1.11_Darwin_arm64.tar.gz"
+      sha256 "543de4283bd99f17dcf8d8b0c4cb1d7cf10dae3e4ed98d6e25ace4e9cc137147"
     end
   end
 
   on_linux do
     if Hardware::CPU.intel?
-      url "https://gitlab.com/28251648/-/releases/v0.1.10/downloads/GoReleaser-TestProj_0.1.10_Linux_x86_64.tar.gz"
-      sha256 "8dabc1061a2aebab889f2679c8b503e20157f47761e18494686430d8426ae581"
+      url "https://gitlab.com/28251648/-/releases/v0.1.11/downloads/GoReleaser-TestProj_0.1.11_Linux_x86_64.tar.gz"
+      sha256 "d19cde7f2ae3643b4b316d343847b6b913ad129addab13bfe976c3ced1ba0852"
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://gitlab.com/28251648/-/releases/v0.1.10/downloads/GoReleaser-TestProj_0.1.10_Linux_arm64.tar.gz"
-      sha256 "ef2e53c2ca23f2a77b1845e1870dca60ed0ced02c651cefe2c9913f0b1da12fd"
+      url "https://gitlab.com/28251648/-/releases/v0.1.11/downloads/GoReleaser-TestProj_0.1.11_Linux_arm64.tar.gz"
+      sha256 "d100a1fef6c37e52e571c07b1437548603fe83fe169fd5a60d35616fe7d990ef"
     end
   end
 
@@ -42,6 +42,5 @@ class GoReleaserTestProj < Formula
 
   test do
     system "#{bin}/stskeygen --version"
-    ...
   end
 end
