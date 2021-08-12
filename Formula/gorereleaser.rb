@@ -5,29 +5,29 @@
 class Gorereleaser < Formula
   desc "Software to create fast and easy drum rolls."
   homepage "https://support.cimpress.cloud/hc/en-us/articles/227873908"
-  version "0.1.14"
+  version "0.1.15"
   license "MIT"
   bottle :unneeded
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://gorereleaser-tst.s3.us-east-1.amazonaws.com/gorereleaser/v0.1.14/gorereleaser_0.1.14_Darwin_x86_64.tar.gz"
-      sha256 "9cdf6980f68f86254d18bfc4ddf114eb6f5fc606aca268d77002af01a885bf6c"
+      url "https://gorereleaser-tst.s3.us-east-1.amazonaws.com/gorereleaser/0.1.15/gorereleaser_0.1.15_Darwin_x86_64.tar.gz"
+      sha256 "c7d403abe6f41bfc77efacc9e64558629a0d559b537478bf9b621813054b5c4b"
     end
     if Hardware::CPU.arm?
-      url "https://gorereleaser-tst.s3.us-east-1.amazonaws.com/gorereleaser/v0.1.14/gorereleaser_0.1.14_Darwin_arm64.tar.gz"
-      sha256 "30ff3c3958bd0eab7920d243002806d936e8b63675f95e6ef7fea756125551f3"
+      url "https://gorereleaser-tst.s3.us-east-1.amazonaws.com/gorereleaser/0.1.15/gorereleaser_0.1.15_Darwin_arm64.tar.gz"
+      sha256 "3ef20b9e2cc46e0aedfd0096e4196881c42da5007030c2cd1bd94c5fe56d741f"
     end
   end
 
   on_linux do
     if Hardware::CPU.intel?
-      url "https://gorereleaser-tst.s3.us-east-1.amazonaws.com/gorereleaser/v0.1.14/gorereleaser_0.1.14_Linux_x86_64.tar.gz"
-      sha256 "79dd33f9d340122b8f14ee0ba3eadc2aa4f51c0c9f6c8eb4213b907acb5e7a2e"
+      url "https://gorereleaser-tst.s3.us-east-1.amazonaws.com/gorereleaser/0.1.15/gorereleaser_0.1.15_Linux_x86_64.tar.gz"
+      sha256 "465b41d3965ecc65462f70c2d21c4b64afa04d90c7a76578bd4fe05286814c73"
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://gorereleaser-tst.s3.us-east-1.amazonaws.com/gorereleaser/v0.1.14/gorereleaser_0.1.14_Linux_arm64.tar.gz"
-      sha256 "fc84d08327c505eef20d219e34c198d000060d02755791345e8674ba1474105f"
+      url "https://gorereleaser-tst.s3.us-east-1.amazonaws.com/gorereleaser/0.1.15/gorereleaser_0.1.15_Linux_arm64.tar.gz"
+      sha256 "39df002013c1d77b152750f2e0442b1c240103b7ffb18a0890f0ec8c94c4292e"
     end
   end
 
