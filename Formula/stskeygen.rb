@@ -12,22 +12,22 @@ class Stskeygen < Formula
   on_macos do
     if Hardware::CPU.intel?
       url "https://gorereleaser-tst.s3.us-east-1.amazonaws.com/stskeygen/2.1.12/stskeygen_2.1.12_Darwin_x86_64.tar.gz"
-      sha256 "c9a058640bb0e211437700ba6b70de815c15556e0923cb714644207d3422af00"
+      sha256 "92860b695a574fb6b5f95efc59be1cee0d1d373d13248754cc72246b9157dc54"
     end
     if Hardware::CPU.arm?
       url "https://gorereleaser-tst.s3.us-east-1.amazonaws.com/stskeygen/2.1.12/stskeygen_2.1.12_Darwin_arm64.tar.gz"
-      sha256 "40218aa94f8b70b417ff2bf3ff8e4f5aee9645aafab09c32450ad50156dfd63b"
+      sha256 "b605e00e2d60190c1aadc324e8e8f1b15c831ff91ecfe2ab90d128854091ccdf"
     end
   end
 
   on_linux do
     if Hardware::CPU.intel?
       url "https://gorereleaser-tst.s3.us-east-1.amazonaws.com/stskeygen/2.1.12/stskeygen_2.1.12_Linux_x86_64.tar.gz"
-      sha256 "1a2dbc63189a238f70e1a9469f57dca53b98befdebe75bb717ba3ccd0178cb3a"
+      sha256 "56d87b1d5a5f7a72295775947105c855c9885494a5c6ee0fb737e5a9adbfe1bf"
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
       url "https://gorereleaser-tst.s3.us-east-1.amazonaws.com/stskeygen/2.1.12/stskeygen_2.1.12_Linux_arm64.tar.gz"
-      sha256 "f65cfbcd2f9343b0e12c11e9c3f89c7f04ec8827e43341f7b4a047ec7d0b2314"
+      sha256 "c7940d34fc4f4d4fdf9fc2af79de3ba2b41861ff419e924cbdbc0ec6b7dbe9b9"
     end
   end
 
